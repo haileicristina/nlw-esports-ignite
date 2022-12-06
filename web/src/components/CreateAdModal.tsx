@@ -23,9 +23,12 @@ export function CreateAdModal(){
 
 
     useEffect(() => {
-      axios('http://localhost:3333/games').then(response => {
-        setGames(response.data);
+      axios.get('http://localhost:3333/games')
+      .then((response) => setGames(response.data))
+      .catch((error) =>{
+        console.log('Erro get', error);
       });
+      
     }, []);
   
     async function handleCreateAd(event: FormEvent) {
@@ -33,13 +36,15 @@ export function CreateAdModal(){
   
       const formData = new FormData(event.target as HTMLFormElement);
       const data = Object.fromEntries(formData);
-  
+      console.log('Data game',data)
       if (!data.name) {
         return;
       }
-  
-      
-         await axios.post(`http://localhost:3333/games/${data.game}/ads`, {
+
+      try {
+         await axios.post(`http://localhost:3333/games/${data.game}/ads`,
+         
+         {
           name: data.name,
           yearsPlaying: Number(data.yearsPlaying),
           discord: data.discord,
@@ -47,18 +52,16 @@ export function CreateAdModal(){
           hourStart: data.hourStart,
           hourEnd: data.hourEnd,
           useVoiceChannel: useVoiceChannel,
-        })
-        .then(response => {
-          console.log(response)
-          alert('Anúncio criado com sucesso!');
-        })
+        });
+  
+        alert('Anúncio criado com sucesso!');
+      } catch (err) {
+        console.log(err);
+        alert('Erro ao criar anúncio!');
+      }
+    } 
+      
         
-        .catch (error =>  {
-          console.log(error.response);
-          alert('Erro ao criar anúncio!');       
-        }) 
-     
-        }
 
     return(
         <Dialog.Portal>

@@ -8,7 +8,7 @@ import { convertMinutesStringToHours } from "./utils/convert-minutes-string-to-h
 const app = express()
 
 app.use(express.json())
-app.use(cors())
+app.use(cors());
 
 
 const prisma = new PrismaClient({
@@ -101,4 +101,4 @@ app.get('/ads/:id/discord', async (request, response) => {
  });
 
  
-app.listen(3333)
+ app.listen(3333);
