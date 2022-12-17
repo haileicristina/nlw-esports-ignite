@@ -27,20 +27,4 @@ npm run build
 ## para buildar com tsc sem precisar reiniciar o build novamente
 npm i ts-node-dev -D
 
-# React
-## Criando o projeto
-npm create vite@latest
 
-# Mobile
-# Criando o projeto
-expo init mobile
-
-## Instalando o emulador Android SDK
-https://efficient-sloth-d85.notion.site/Instalando-Expo-9b0abcb12bd548278e042d00fbde67f2
-
-https://docs.expo.dev/workflow/android-studio-emulator/
-
-https://docs.expo.dev/workflow/expo-cli/
-
-## para iniciar o projeto abra o emulador do Android SDK antes depois digite no terminal
-npm start
