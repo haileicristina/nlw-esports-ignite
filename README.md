@@ -21,7 +21,7 @@
 
 ![Badge Dependência REACT NAVIGATION](http://img.shields.io/static/v1?label=DEPENDÊNCIAS&message=EM%20REACT_NAVIGATION&color=LIGHTGREY&style=for-the-badge)
 
-![Badge Dependência EXPO-STATUS-BAR](http://img.shields.io/static/v1?label=DEPENDÊNCIAS&message=EM%20 EXPO-STATUS-BAR&color=LIGHTGREY&style=for-the-badge)
+![Badge Dependência EXPO-STATUS-BAR](http://img.shields.io/static/v1?label=DEPENDÊNCIAS&message=EM%20EXPO-STATUS-BAR&color=LIGHTGREY&style=for-the-badge)
 
 ![Badge Dependência REACT-NATIVE-SAFE- AREA-CONTEXT](http://img.shields.io/static/v1?label=DEPENDÊNCIAS&message=EM%20REACT-NATIVE-SAFE-AREA-CONTEXT&color=LIGHTGREY&style=for-the-badge)
 
